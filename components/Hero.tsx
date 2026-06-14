@@ -59,7 +59,9 @@ export default function Hero() {
             gleichzeitig mehr zu verdienen. Damit wir mehr Zeit haben für
             Erholung, Kreativität, Freunde, Familie und Heilung.
           </p>
-          <p>Aber es ist kein leichter Weg.</p>
+          <p>
+            <strong>Aber es ist kein leichter Weg.</strong>
+          </p>
           <p>
             Besonders für hochsensible und neurodivergente Menschen. Neurotypische
             Strategien funktionieren für uns nicht. „Einfach machen“ führt uns
@@ -96,7 +98,7 @@ export default function Hero() {
           variants={item}
           onClick={handleStart}
         >
-          Wie das geht
+          Mehr erfahren
           <span aria-hidden="true">↓</span>
         </motion.button>
       </motion.div>

@@ -58,7 +58,7 @@ body::before {
     radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201, 130, 75, 0.10), transparent 60%),
     radial-gradient(ellipse 90% 70% at 50% 110%, rgba(184, 115, 65, 0.06), transparent 55%),
     linear-gradient(rgba(26, 23, 20, 0.62), rgba(26, 23, 20, 0.78)),
-    url("/background.jpg") center center / cover no-repeat fixed;
+    url("/background.jpg") center center / cover no-repeat;
   background-color: var(--bg);
 }
 
@@ -208,6 +208,11 @@ body::after {
   font-size: clamp(1rem, 2.3vw, 1.12rem);
   line-height: 1.78;
   color: var(--text-muted);
+}
+
+.hero-letter strong {
+  font-weight: 700;
+  color: var(--text);
 }
 
 .hero-signature {

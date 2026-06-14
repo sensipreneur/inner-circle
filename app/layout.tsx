@@ -12,7 +12,7 @@ const playfair = Playfair_Display({
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "700"],
   display: "swap",
   variable: "--font-body",
 });
