@@ -27,7 +27,7 @@ export default function Contact() {
       >
         <h2 className="font-display contact-title">Noch Fragen?</h2>
         <p className="contact-text">
-          Schreib mir einfach. Ich antworte dir persönlich.
+          Schreib mir einfach. Ich antworte dir persönlich :)
         </p>
         <a className="btn" href="mailto:andrew@goldkugel-ghostwriting.de">
           Schreib mir eine Mail
