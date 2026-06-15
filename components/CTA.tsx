@@ -73,7 +73,11 @@ export default function CTA() {
         </motion.div>
 
         <motion.p className="cta-note" variants={item}>
-          Türen offen bis Freitag, 19.06. Begrenzt auf 25 Plätze.
+          Community ist aktuell <strong>geöffnet</strong> bis Freitag, 19.06.
+        </motion.p>
+
+        <motion.p className="cta-note cta-note-sub" variants={item}>
+          Begrenzt auf 25 Plätze.
         </motion.p>
       </motion.div>
     </section>

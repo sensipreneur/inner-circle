@@ -6,7 +6,7 @@ export default function Hero() {
   const reduce = useReducedMotion();
 
   const handleStart = () => {
-    const target = document.getElementById("manifest");
+    const target = document.getElementById("schritte");
     if (target) {
       target.scrollIntoView({
         behavior: reduce ? "auto" : "smooth",
@@ -46,15 +46,15 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1 className="font-display hero-title" variants={item}>
-          Wir leben in einem kranken System.
+          Dein Weg in die Selbstständigkeit als hochsensibler Mensch
         </motion.h1>
 
-        <motion.div className="hero-lead" variants={item}>
-          <p>
-            Menschen gehören nicht 8 Stunden in dunkle Räume eingesperrt, wo sie
-            ständigem Leistungsdruck und sinnlosen Aufgaben ausgesetzt sind.
-          </p>
-          <p className="hero-lead-strong">Aber es gibt einen anderen Weg.</p>
+        <motion.div className="hero-video" variants={item}>
+          <iframe
+            src="https://www.loom.com/embed/d7d73f3a2ac74ad1a0ce1151222f0d95"
+            title="Willkommen im Sensipreneure Inner Circle"
+            allowFullScreen
+          />
         </motion.div>
 
         <motion.div variants={item} className="hero-cta">
@@ -72,7 +72,11 @@ export default function Hero() {
         </motion.div>
 
         <motion.p className="cta-note" variants={item}>
-          Türen offen bis Freitag, 19.06. Begrenzt auf 25 Plätze.
+          Community ist aktuell <strong>geöffnet</strong> bis Freitag, 19.06.
+        </motion.p>
+
+        <motion.p className="cta-note cta-note-sub" variants={item}>
+          Begrenzt auf 25 Plätze.
         </motion.p>
 
         <motion.button
