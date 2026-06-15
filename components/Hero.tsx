@@ -6,7 +6,7 @@ export default function Hero() {
   const reduce = useReducedMotion();
 
   const handleStart = () => {
-    const target = document.getElementById("weg");
+    const target = document.getElementById("manifest");
     if (target) {
       target.scrollIntoView({
         behavior: reduce ? "auto" : "smooth",
@@ -49,29 +49,12 @@ export default function Hero() {
           Wir leben in einem kranken System.
         </motion.h1>
 
-        <motion.div className="hero-letter" variants={item}>
+        <motion.div className="hero-lead" variants={item}>
           <p>
             Menschen gehören nicht 8 Stunden in dunkle Räume eingesperrt, wo sie
             ständigem Leistungsdruck und sinnlosen Aufgaben ausgesetzt sind.
           </p>
-          <p>
-            Selbstständigkeit macht es möglich, weniger zu arbeiten und
-            gleichzeitig mehr zu verdienen. Damit wir mehr Zeit haben für
-            Erholung, Kreativität, Freunde, Familie und Heilung.
-          </p>
-          <p>
-            <strong>Aber es ist kein leichter Weg.</strong>
-          </p>
-          <p>
-            Besonders für hochsensible und neurodivergente Menschen. Neurotypische
-            Strategien funktionieren für uns nicht. „Einfach machen“ führt uns
-            nur ins nächste Burnout. Deswegen habe ich diese Community gegründet.
-          </p>
-          <p>
-            Hier finden wir gemeinsam raus aus der Ohnmacht und rein in die
-            Selbstwirksamkeit. Das ist mein Commitment gegenüber jedem Mitglied.
-          </p>
-          <p className="hero-signature">– andrew</p>
+          <p className="hero-lead-strong">Aber es gibt einen anderen Weg.</p>
         </motion.div>
 
         <motion.div variants={item} className="hero-cta">

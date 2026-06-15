@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Manifesto from "@/components/Manifesto";
 import Steps from "@/components/Steps";
 import CTA from "@/components/CTA";
 import Faq from "@/components/Faq";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Manifesto />
       <Steps />
       <CTA />
       <Faq />
