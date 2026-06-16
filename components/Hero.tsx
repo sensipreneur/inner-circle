@@ -58,7 +58,7 @@ export default function Hero() {
           />
         </motion.div>
 
-        <motion.div variants={item}>
+        <motion.div className="form-wrap" variants={item}>
           <TallyForm />
         </motion.div>
 

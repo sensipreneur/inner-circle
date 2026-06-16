@@ -59,7 +59,7 @@ export default function CTA() {
           ))}
         </motion.div>
 
-        <motion.div variants={item}>
+        <motion.div className="form-wrap" variants={item}>
           <TallyForm />
         </motion.div>
       </motion.div>

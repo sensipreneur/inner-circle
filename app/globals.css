@@ -519,6 +519,10 @@ body::after {
 }
 
 /* Tally-Bewerbungsformular (eingebettet, Hero + CTA) */
+.form-wrap {
+  width: 100%;
+}
+
 .tally-embed {
   width: 100%;
   max-width: 640px;
