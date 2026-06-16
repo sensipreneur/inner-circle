@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import TallyForm from "./TallyForm";
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -57,27 +58,9 @@ export default function Hero() {
           />
         </motion.div>
 
-        <motion.div variants={item} className="hero-cta">
-          <a
-            className="btn btn-cta"
-            href="https://sensipreneure.circle.so/checkout/sensipreneure"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mitglied werden
-            <span className="btn-arrow" aria-hidden="true">
-              →
-            </span>
-          </a>
+        <motion.div variants={item}>
+          <TallyForm />
         </motion.div>
-
-        <motion.p className="cta-note" variants={item}>
-          Community ist aktuell <strong>geöffnet</strong> bis Freitag, 19.06.
-        </motion.p>
-
-        <motion.p className="cta-note cta-note-sub" variants={item}>
-          Begrenzt auf 25 Plätze.
-        </motion.p>
 
         <motion.button
           type="button"

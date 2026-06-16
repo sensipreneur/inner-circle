@@ -221,10 +221,6 @@ body::after {
   color: rgba(230, 229, 208, 0.38);
 }
 
-.hero-cta {
-  margin-top: 42px;
-}
-
 /* Dezenter Scroll-Hinweis unter dem CTA */
 .hero-scrollhint-text {
   appearance: none;
@@ -522,30 +518,17 @@ body::after {
   letter-spacing: -0.02em;
 }
 
-.cta-action {
-  margin-top: 40px;
+/* Tally-Bewerbungsformular (eingebettet, Hero + CTA) */
+.tally-embed {
+  width: 100%;
+  max-width: 640px;
+  margin: 30px auto 0;
 }
 
-.btn-cta {
-  font-size: 1rem;
-  padding: 1.05em 2.3em;
-}
-
-.cta-note {
-  margin-top: 22px;
-  font-size: 0.84rem;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-}
-
-.cta-note strong {
-  font-weight: 700;
-  color: var(--text);
-}
-
-/* Zweite Hinweiszeile (Plätze) dicht unter der ersten */
-.cta-note-sub {
-  margin-top: 6px;
+.tally-embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
 }
 
 /* =========================================================
@@ -984,6 +967,67 @@ body::after {
   font-size: 1.02rem;
   line-height: 1.7;
   color: var(--text-muted);
+}
+
+/* =========================================================
+   BEWERBUNG ABGESCHICKT  ( /bewerbung-erhalten )
+   ========================================================= */
+.thanks {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(80px, 16vh, 160px) 24px;
+}
+
+.thanks-inner {
+  max-width: 560px;
+  text-align: center;
+}
+
+.thanks-title {
+  font-weight: 600;
+  font-size: clamp(2.2rem, 7vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.thanks-text {
+  margin-top: 22px;
+  font-weight: 300;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.thanks-note {
+  margin-top: 26px;
+  font-weight: 300;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.thanks-note strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.thanks-note a {
+  color: var(--accent-soft);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 130, 75, 0.4);
+}
+
+.thanks-note a:hover,
+.thanks-note a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* =========================================================

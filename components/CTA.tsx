@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { voraussetzungen } from "@/data/steps";
+import TallyForm from "./TallyForm";
 
 const pricing = [
   { amount: "99 €", period: "/ Monat", save: null },
@@ -58,27 +59,9 @@ export default function CTA() {
           ))}
         </motion.div>
 
-        <motion.div variants={item} className="cta-action">
-          <a
-            className="btn btn-cta"
-            href="https://sensipreneure.circle.so/checkout/sensipreneure"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mitglied werden
-            <span className="btn-arrow" aria-hidden="true">
-              →
-            </span>
-          </a>
+        <motion.div variants={item}>
+          <TallyForm />
         </motion.div>
-
-        <motion.p className="cta-note" variants={item}>
-          Community ist aktuell <strong>geöffnet</strong> bis Freitag, 19.06.
-        </motion.p>
-
-        <motion.p className="cta-note cta-note-sub" variants={item}>
-          Begrenzt auf 25 Plätze.
-        </motion.p>
       </motion.div>
     </section>
   );
