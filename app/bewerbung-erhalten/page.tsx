@@ -18,8 +18,8 @@ export default function BewerbungErhalten() {
         <p className="thanks-note">
           <strong>Wichtig:</strong> Prüfe auch deinen Spam-Ordner oder füge meine
           E-Mail-Adresse (
-          <a href="mailto:andrew@goldkugel-ghostwriting.de">
-            andrew@goldkugel-ghostwriting.de
+          <a href="mailto:andrew@sensipreneur.de">
+            andrew@sensipreneur.de
           </a>
           ) zu deinen Kontakten hinzu, damit die E-Mail bei dir ankommt.
         </p>

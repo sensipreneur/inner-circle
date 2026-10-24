@@ -29,7 +29,7 @@ export default function Contact() {
         <p className="contact-text">
           Schreib mir einfach. Ich antworte dir persönlich :)
         </p>
-        <a className="btn" href="mailto:andrew@goldkugel-ghostwriting.de">
+        <a className="btn" href="mailto:andrew@sensipreneur.de">
           Schreib mir eine Mail
         </a>
       </motion.div>
